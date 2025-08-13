@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>이정민 — 프로필 & 포트폴리오</title>
+  <meta name="description" content="이정민 — 강원대학교 HAI 연구실 석사 과정. IoT 기반 의료·접근성 연구와 웹/앱을 만드는 개발자." />
+  <meta name="author" content="Jungmin Lee" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="이정민 — 프로필 & 포트폴리오" />
+  <meta property="og:description" content="IoT Eye-Patch 모니터링, 시각장애인 스마트폰 탐색 비효율 연구, 포커스 프록시 앱." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main" class="visually-hidden-focusable">본문으로 건너뛰기</a>
+
+  <!-- ===== 상단 내비게이션 ===== -->
+  <header class="site-header" role="banner">
+    <div class="container nav" aria-label="주요 내비게이션">
+      <div class="brand">
+        <div class="brand-avatar" aria-hidden="true">
+        <img src="images/profile.jpg" alt="이정민"/>
+        </div>
+        <h1>이정민</h1>
+      </div>
+      <nav aria-label="섹션 링크">
+        <ul>
+          <li><a href="#about">소개</a></li>
+          <li><a href="#timeline">연혁</a></li>
+          <li><a href="#projects">프로젝트</a></li>
+          <li><a href="#publications">논문</a></li>
+          <li><a href="#contact">연락처</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <!-- ===== 히어로 ===== -->
+    <section class="hero" id="about">
+      <p class="meta">강원대학교 HAI 연구실 석사 과정</p>
+      <h2>보이지 않는 것을 보이게 하고, 흩어진 것을 잇습니다.</h2>
+      <p>사람들의 일상 속에서 데이터와 기술이 만나는 순간을 연구합니다.</p>
+      <div class="grid">
+        <div class="card intro">
+          <h3>📌 소개</h3>
+          <p>
+          실사용 환경에서 수집한 데이터를 분석해 문제를 정의하고,  
+          이를 해결할 IoT·웹·모바일 프로토타입을 설계·구현합니다.  
+          의료 기기 모니터링, 접근성 개선, 디지털 웰빙 등  
+          사람들의 실제 사용 맥락에서 가치를 주는 기술을 만드는 것을 목표로 합니다.
+          </p>
+          <p class="meta">사용 기술: Python, Kotlin(Android), Java, HTML/CSS/JS, BLE</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 연혁 ===== -->
+    <section class="section" id="timeline" aria-label="연혁">
+      <h2>🗂️ 연혁</h2>
+      <ul class="timeline">
+        <li><time datetime="2024-09-02">2024.09.02</time> 강원대학교 컴퓨터공학과 학·석사 연계과정 입학</li>
+        <li><time datetime="2019-03-02">2019.03.02</time> 강원대학교 컴퓨터 학부 입학</li>
+        <li><time datetime="2000-11-01">2000.11.01</time> 출생</li>
+      </ul>
+    </section>
+
+    <!-- ===== 프로젝트 ===== -->
+    <section class="section" id="projects" aria-label="프로젝트">
+      <h2>🛠 프로젝트</h2>
+      <div class="projects">
+        <!-- IoT Eye-Patch 모니터링 (앱/웹) -->
+        <article class="card project">
+          <div class="thumb-wrap">
+            <img src="images/eye-patch.png" alt="IoT Eye-Patch 모니터링 앱/웹 화면" class="thumb" />
+          </div>
+          <div class="project-body">
+            <h4>IoT Eye-Patch 실시간 모니터링 — 앱 & 의사용 웹</h4>
+            <p>블루투스(BLE)와 이중 온도 센서 데이터를 앱으로 수집해 <strong>15초 간격</strong>으로 서버에 전송, 의사용 웹에서 <strong>캘린더·그래프</strong>로 착용 순응도를 확인/처방하도록 구현.</p>
+            <div class="badges">
+              <span class="badge">BLE</span>
+              <span class="badge">Mobile App</span>
+              <span class="badge">Web Dashboard</span>
+              <span class="badge">Charts</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="papers/InternetofThings-EnabledPatch.pdf" download>📄 Paper (PDF)</a>
+              <a class="btn small" href="https://doi.org/10.1167/tvst.13.5.18" download>📄 doi (WEB)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 시각장애인 스마트폰 탐색 비효율 연구 -->
+        <article class="card project">
+          <div class="thumb-wrap">
+            <img src="images/visually-impaired-nav.png" alt="시각장애인 스마트폰 탐색 흐름 분석 시각화" class="thumb" />
+          </div>
+          <div class="project-body">
+            <h4>시각장애인 스마트폰 네비게이션 비효율 탐지</h4>
+            <p>11명, 4주 실사용 데이터 + 인터뷰 기반. PrefixSpan 시퀀스 마이닝과 휴리스틱으로 <em>의도 반영 안 된 초기 포커스</em>(96.5%), <em>상호작용되지 않는 UI</em>(68.6%), <em>UI 역순 탐색</em>(71.1%)을 유형화하고 탐지 알고리즘 방향 제안.</p>
+            <div class="badges">
+              <span class="badge">Accessibility</span>
+              <span class="badge">Accessibility Service</span>
+              <span class="badge">Sequence Mining</span>
+              <span class="badge">Screen Reader</span>
+              <span class="badge">Manuscript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 포커스 프록시 앱 -->
+        <article class="card project">
+          <div class="thumb-wrap">
+            <img src="images/focus-proxy.png" alt="포커스 프록시 앱 데모 화면" class="thumb" />
+          </div>
+          <div class="project-body">
+            <h4>포커스 프록시 앱 (Android)</h4>
+            <p>Kotlin으로 <strong>떠 있는 버튼을 누르고 있어야</strong> 스마트폰 조작이 가능하게 설계. 의도적 물리적 부담으로 스마트폰 사용 의존도를 낮추기 위한 앱.</p>
+            <div class="badges">
+              <span class="badge">Android</span>
+              <span class="badge">Kotlin</span>
+              <span class="badge">Digital Wellbeing</span>
+              <span class="badge">Accessibility Service</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== 논문 ===== -->
+    <section class="section" id="publications" aria-label="논문">
+      <h2>📚 논문</h2>
+      <div class="card">
+        <p>
+          Jiwoo Hwang; Kyu-Seong Jo; Min-Seo Kim; Sunghwan Choi; <strong>Jungmin Lee;</strong> Auk Kim; Yung-Ju Yoo<br />
+          <em>Internet of Things-Enabled Patch With Built-in Microsensors and Wireless Chip: Real-Time Remote Monitoring of Patch Treatment</em>.<br />
+        </p>
+        <div class="actions">
+          <a class="btn small" href="papers/InternetofThings-EnabledPatch.pdf" download>📄 Paper (PDF)</a>
+          <a class="btn small" href="https://doi.org/10.1167/tvst.13.5.18" download>📄 doi (WEB)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 연락처 ===== -->
+    <section class="section" id="contact" aria-label="연락처">
+      <h2>📫 연락처</h2>
+      <div class="grid">
+        <div class="card contact">
+          <p>Email: <a href="mailto:jungminlee@hai.kangwon.ac.kr">jungminlee@hai.kangwon.ac.kr</a></p>
+          <p>GitHub: <a href="https://github.com/Lsom5064" target="_blank" rel="noopener">Lsom5064</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">© <span id="year">2025</span> Jungmin Lee. All rights reserved.</div>
+  </footer>
+
+  <button id="toTop" class="btn to-top" aria-label="맨 위로">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
